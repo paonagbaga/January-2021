@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Order Form</title>
+	</head>
+	
+	<body>
+		<center>
+		<h1>Piso Print sa Urban Deca</h1>
+		<br><img src="./office.jpg" height="225" width="400"/>
+		<form action="./practice.html" method="POST">
+			<br><p><label for="name"><strong>Name / Nickname:</strong></label></p>
+				<input type="text" id="name" name="name" placeholder="Enter your name here" pattern="[a-zA-Z]+" required minlength="2" maxlength="35">
+			<p><strong>How would you like us to print your document?</strong></p>
+				<input type="radio" id="bnw" name="color" value="bnw" required>
+				<label for="bnw">Black and White (P1 / page)</label>
+				<br><input type="radio" id="withColored" name="color" value="withColored">
+				<label for="withColored"><a href="./pisoprint.html">Colored (P3 - P10 / page depending upon the size of the colored area)</a></label>	
+			<p><strong>What kind of paper do we print your document in?</strong></p>
+				<input type="radio" id="short" name="paper" value="short" required>
+				<label for="short">Short</label>
+				<input type="radio" id="a4" name="paper" value="a4">
+				<label for="a4">A4</label>
+			<p><strong>What pages of the document would you like us to print?</strong></p>
+				<input type="radio" id="all" name="pages" value="all" required>
+				<label for="all">All of the pages</label>
+				<br><input type="radio" id="customPages" name="pages" value="customPages">
+				<label for=customPages>Others:</label>
+				<br><textarea name="pages" rows="5" cols="30" placeholder="Please type the page number/s here (e.g. 1-5, 8, 11-13)"></textarea>
+			<br><br><label for="copies"><strong>How many copies would you like us to print?</strong></label>
+				<br><input type="number" id="copies" name="copies" min="1" step="1" required>
+			<p><strong>Would you like us to staple your document?</strong></p>
+				<input type="radio" id="stapled" name="staple" value="yes" required>
+				<label for="stapled">Yes</label>
+				<input type="radio" id="notStapled" name="staple" value="no">
+				<label for="notStapled">No</label>
+			<p><strong>When do we deliver your document? (Date, Time)</strong></p>
+				<input type="radio" id="asap" name="deliver" value="asap" required>
+				<label for="asap">Today / As soon as it's printed / ASAP</label>
+				<br><input type="radio" id="otherTime" name="deliver" value="otherTime">
+				<label for="otherTime">Some other date / time:</label>
+				<input type="date" name="deliver">
+				<input type="time" name="deliver">
+			<p><strong>Where do we deliver your document? (Building #, Unit #)</strong></p>
+				<label for="building">Building #:</label>
+				<input type="text" list="buildings" id="building" name="building" required>
+				<datalist id="buildings">
+					<option value="1">Building 1</option>
+					<option value="2">Building 2</option>
+					<option value="3">Building 3</option>
+					<option value="4">Building 4</option>
+					<option value="5">Building 5</option>
+					<option value="6">Building 6</option>
+					<option value="7">Building 7</option>
+					<option value="8">Building 8</option>
+					<option value="9">Building 9</option>
+					<option value="10">Building 10</option>
+					<option value="11">Building 11</option>
+					<option value="12">Building 12</option>
+					<option value="13">Building 13</option>
+					<option value="14">Building 14</option>
+					<option value="15">Building 15</option>
+					<option value="16">Building 16</option>
+					<option value="17">Building 17</option>
+				</datalist>
+				<br><label for="unit">Unit #:</label>
+				<input type="text" id="unit" name="unit" pattern="[0-9]{3,3}" required>
+			<p><strong>What is your mode of payment?</strong></p>
+				<input type="radio" id="cod" name="payment" value="cod" required>
+				<label for="cod">COD</label>
+				<br><input type="radio" id="gcash" name="payment" value="gcash">
+				<label for="gcash">GCash (Please message us on Facebook for this option)</label>
+			<p><strong><label for="anythingElse">Anything else you would like us to know? Anything else we missed?</label></strong></p>
+				<textarea id="anythingElse" name="anythingElse" rows="5" cols="30" placeholder="Optional"></textarea>
+			<br><br><label for="upload"><strong>Upload your file:</strong></label>
+				<input type="file" id="upload" name="upload" required>
+			<br><br><input type="submit" value="Happy Printing!">
+		</form>
+
+		<br><br><br><br><br>
+		<a href="./OrderForm.html"><img src="./piso.png" height="25" width="25" alt="printer"/> PRINT ANOTHER DOCUMENT</a>
+		<!--
+		SITE FOOTER
+		-->
+		
+		<br><br><br><br><br>
+		<a href="./PisoPrint.html">Back to <em>Piso Print ni Paula</em></a>
+		</center>
+	</body>
+</html>

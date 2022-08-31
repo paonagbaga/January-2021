@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<title>Others</title>	
+	</head>
+	
+	<body>
+	<h1>Others</h1>
+	<p>This website contains some tags that I did not use in my sample HTML website/s. I would still like to practice how to use them, (but I never found them relevant or applicable to the contents of my sample website/s) hence, this. :-) </p>
+
+	<strong>Contents</strong>
+	<ul>
+		<li><a href="#headings">Other Headings</a></li>
+		<li><a href="#ul">Unordered List</a></li>
+		<li><a href="#video">Video</a></li>
+		<li><a href="#SpanningRows">Spanning Rows</a></li>
+		<li><a href="#TableFooter">Table Footer</a></li>
+		<li><a href="#password">Password Input</a></li>
+		<li><a href="#range">Range Input</a></li>
+		<li><a href="#dropdownList">Dropdown List</a></li>
+		<li><a href="#checkbox">Checkbox Input</a></li>
+	</ul>
+
+	<hr>
+	<h2 id="headings">Other headings</h2>
+	<h4>H4</h4>
+		<h5>H5</h5>
+			<h6>H6</h6>
+
+	<hr>
+	<h2 id="ul">Unordered List</h2>
+	<ul>
+		<li>Unordered Item 1</li>
+		<li>Unordered Item 2</li>
+	</ul>
+
+	<hr>
+	<h2 id="video">Video</h2>
+	<iframe width="727" height="409" src="https://www.youtube.com/embed/BcqxLCWn-CE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!--
+	<video src="https://youtu.be/BcqxLCWn-CE" height="240" width="320" controls>
+		Video not supported
+	</video>
+	-->
+
+	<hr>
+	<h2 id="SpanningRows">Spanning Rows</h2>
+	<table border="1">
+		<thead>
+	  		<tr>
+	  			<th></th>
+	    		<th>Black and White</th>
+			    <th>Black and White with Colored</th>
+			    <th>Half Page Colored</th>
+	    		<th>Full Page Colored</th>
+	  		</tr>
+	  	</thead>
+	  	<tbody>
+	  		<tr>
+	  			<th scope="row">Short</th>
+			    <td rowspan="2"><center>P1</center></td>
+			    <td rowspan="2"><center>P3</center></td>
+			    <td rowspan="2"><center>P5</center></td>
+			    <td rowspan="2"><center>P10</center></td>
+			 </tr>
+			<tr>
+				<th scope="row">A4</th>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr>
+	<h2 id="TableFooter">Table Footer</h2>
+		<p>
+		- The bottom part of a table
+		<br>- tfoot element
+		<br>- Can contain the sum (total), difference, or result of the data contained in the table
+		</p>
+
+	<hr>
+	<h2 id="password">Password Input</h2>
+	<form action="./practice.html" method="POST">
+		<label for="password">Please enter your password below:</label>
+		<br><input type="password" id="password" name="password" minlength="8" maxlength="15">
+		<br><input type="submit" value="Submit">
+	</form>
+	<br>
+
+	<hr>
+	<h2 id="range">Range Input</h2>
+	<form>
+		<label for="volume">Range Input as Volume Control</label>
+		<br>1<input type="range" id="volume" name="volume" min="0" max="100" step="1">100
+	</form>
+
+	<hr>
+	<h2 id="dropdownList">Dropdown List</h2>
+	<form>
+				<label for="building">On what building do we deliver your item? </label>
+				<select id="building" name="building">
+					<option value="1">Building 1</option>
+					<option value="2">Building 2</option>
+					<option value="3">Building 3</option>
+					<option value="4">Building 4</option>
+					<option value="5">Building 5</option>
+					<option value="6">Building 6</option>
+					<option value="7">Building 7</option>
+					<option value="8">Building 8</option>
+					<option value="9">Building 9</option>
+					<option value="10">Building 10</option>
+					<option value="11">Building 11</option>
+					<option value="12">Building 12</option>
+					<option value="13">Building 13</option>
+					<option value="14">Building 14</option>
+					<option value="15">Building 15</option>
+					<option value="16">Building 16</option>
+					<option value="17">Building 17</option>
+				</select>
+	</form>
+
+
+	<hr>
+	<h2 id="checkbox">Checklist</h2>
+	<form action="./practice.html" method="POST">
+		<label for="understood">Please send your file/s as a message to our Facebook page, <a href="https://www.facebook.com/paprintansasugbo">Piso Print at UDHC</a>
+		<br><br>OR
+		<br><br>to our e-mail address <u>paprintansasugbo@gmail.com</u></label>
+		<br><br><input type="checkbox" id="understood" name="understood" value="yes" required>I understand.
+		<br><br><input type="submit" value="Submit">
+	</form>
+
+	<!--
+		SITE FOOTER
+	-->
+	
+	<center>
+		<br><br><br>
+	<a href="./Main.html">Back to main page</a>
+	</center>
+
+	</body>
+</html>
